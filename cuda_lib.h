@@ -4,5 +4,6 @@
 #define BLOCK_SIZE 32
 #define MAX_SIZE 100
 
-void cuda_sparse_matrix_mult(float A[100][100], float B[100][100], float C[100][100], int a_row, int a_col, int b_col);
+void cuda_sparse_matrix_mult(float A[MAX_SIZE][MAX_SIZE], float B[MAX_SIZE][MAX_SIZE], float C[MAX_SIZE][MAX_SIZE], 
+  int a_row, int a_col, int b_col);
 #endif
